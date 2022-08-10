@@ -1,0 +1,9 @@
+<!-- layouts/taxonomy/tags.html -->
+<h2>Article List for Tag: {{.LinkTitle}} (formatting coming soon)</h2>
+<ul>
+  {{ range .Data.Pages }}
+  <li>
+    <a href="{{.RelPermalink}}">{{ .Title }}</a>
+  </li>
+  {{ end }}
+</ul>
